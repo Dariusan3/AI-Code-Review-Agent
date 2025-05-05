@@ -26,7 +26,7 @@ export function ReviewButton({
     setIsLoading(true);
 
     try {
-      const { text } : any = await createReviewAgent({
+      const { text } = await createReviewAgent({
         prompt:
           "Please review this code and provide detailed feedback with line numbers.",
         code: fileContent,
